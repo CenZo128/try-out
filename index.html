@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Course Pen</title>
+	<link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+
+	<!--Bootstrap CSS & JS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!--Font Awesome-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<!--Style CSS-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--Google Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Merryweather" rel="stylesheet"> 
+	
+	<!--RESPONSIVESLIDES-->
+	<link rel="stylesheet" href="js/ResponsiveSlides/responsiveslides.css">
+	<script type="text/javascript" src="js/ResponsiveSlides/responsiveslides.js"></script>
+	<!--JS Sendiri-->
+	<script type="text/javascript" src="js/custom.js"></script>
+	<!--Fungsi jQuery yang di panggil untuk Slideshow-->
+	<script type="text/javascript">
+	
+		$(document).ready(function(){
+			$("#slider1").responsiveSlides({
+		        auto: true,
+		        pager: false,
+		        nav: true,
+		        speed: 500,
+		        namespace: "callbacks",
+     		});
+		});
+
+	</script>
+</head>
+
+<body>
+	<!--NAVBAR-->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top fadeInStart">
+	  <a class="navbar-brand d-none d-md-block scroll-top" href="#"><img class="img-fluid" src="images/logocoursepen.png"></a>
+
+	  <a class="navbar-brand d-block d-md-none scroll-top" href="#"><img class="img-fluid" src="images/logo.png"></a>
+	  
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+	    <ul class="navbar-nav ml-auto ">
+	      <li class="nav-item">
+	        <a class="nav-link scroll-link" href="#" data-id="product" >Product</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link scroll-link" href="#" data-id="service">Services</a>
+	      </li>
+
+	      <li class="nav-item">
+	        <a class="nav-link scroll-link" href="#" data-id="profile">Profile</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link scroll-link" href="#" data-id="teams">Teams</a>
+	      </li>
+
+	       <li class="nav-item">
+	        <a class="nav-link scroll-link" href="#" data-id="contact">Contact Us</a>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle scroll-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-id="events">
+	          Events
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#">Software</a>
+	          <a class="dropdown-item" href="#">Hardware</a>
+	          <a class="dropdown-item" href="#">Server</a>
+	        </div>
+	      </li>
+	    </ul>
+	  </div>
+
+	</nav>
+
+	<!--OPENING-->
+	<div id="opening" class="container-fluid fadeInStart">	
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<div class="jumbotron">
+					<div class="container">
+						<h3>Welcome to Course Pen guys!!</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.  </p>
+						<button class="btn btn-warning scroll-link" data-id="events">Explore</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+	</div>
+
+	<!--EVENTS-->
+	<div id="events" class="container-fluid page-section" >
+		<div class="container">
+			<h3>Training Events</h3>
+			<p>See Our Newest Events In Various Companies</p>
+			<hr/>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-6 ">
+					<div class="card">
+						<img class="card-img-top img-fluid" src="images/gambar1.jpg">
+						<div class="card-body">
+							<p class="card-text">Lorem Ipsum adalah contoh teks atau dummy.</p>
+						</div>
+
+						<div class="card-bottom" >
+							<div class="float-left">
+								<i class="fas fa-map-marker-alt"></i>
+								<small>Univ. Binus</small>
+							</div>
+							<div class="float-right">
+								<small>10 April 2018</small>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-6" >
+					<div class="card">
+						<img class="card-img-top img-fluid" src="images/gambar2.jpg">
+						<div class="card-body">
+							<p class="card-text">Lorem Ipsum adalah contoh teks atau dummy.</p>
+						</div>
+
+						<div class="card-bottom" >
+							<div class="float-left">
+								<i class="fas fa-map-marker-alt"></i>
+								<small>Univ. Tarumanagara</small>
+							</div>
+							<div class="float-right">
+								<small>10 April 2018</small>
+							</div>
+						</div>
+							
+					</div>
+
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-6 ">
+					<div class="card">
+						<img class="card-img-top img-fluid" src="images/gambar3.jpg">
+						<div class="card-body">
+							<p class="card-text">Lorem Ipsum adalah contoh teks atau dummy.</p>
+						</div>
+
+						<div class="card-bottom" >
+							<div class="float-left">
+								<i class="fas fa-map-marker-alt"></i>
+								<small>Univ. Trisakti </small>
+							</div>
+							<div class="float-right">
+								<small>10 April 2018</small>
+							</div>
+						</div>
+							
+					</div>
+
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-6"  >
+					<div class="card">
+						<img class="card-img-top img-fluid" src="images/gambar4.jpg">
+						<div class="card-body">
+							<p class="card-text">Lorem Ipsum adalah contoh teks atau dummy.</p>
+						</div>
+
+						<div class="card-bottom" >
+							<div class="float-left">
+								<i class="fas fa-map-marker-alt"></i>
+								<small>Univ. Parahyangan</small>
+							</div>
+							<div class="float-right">
+								<small>10 April 2018</small>
+							</div>
+						</div>
+							
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!--SLIDESHOW-->
+	<div class="callbacks_container ">
+	     <ul class="rslides" id="slider1">
+	       <li>
+	         <img src="images/slide1.jpg" alt="">
+	         <p class="caption">Lorem Ipsum adalah contoh teks atau dummy.</p>
+	       </li>
+	       <li>
+	         <img src="images/slide2.jpg" alt="">
+	         <p class="caption">Lorem Ipsum adalah contoh teks atau dummy.</p>
+	       </li>
+	       <li>
+	         <img src="images/slide3.jpg" alt="">
+	         <p class="caption">Lorem Ipsum adalah contoh teks atau dummy.</p>
+	       </li>
+	     </ul>
+	 </div>
+
+	<!--PRODUCT-->
+	<div id="product" class="container-fluid page-section">
+		<div class="container">
+			<h3>Our Products</h3>
+			<p>Course Pen Offers Wide Selection of Products & Services for Your IT Lifecycle Needs, from Top Brands to Customized Services</p>
+			<hr/>
+			
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card">
+						<img class="card-img-top" src="images/product1.jpg">
+						<div class="card-body">
+							<h5>Mobile Apps</h5>
+							<p class="card-text">Lorem Ipsum adalah contoh teks atau dummy.</p>
+						</div>
+
+						<div class="card-bottom" >
+							<div class="row">
+								<div class="col-md-2 col-sm-2 col-2">
+									<i class="fab fa-apple"> </i>
+								</div>
+								<div class="col-md-10 col-sm-10 col-10">
+									<p class="float-left">iOS Application</p>
+								</div>
+								
+							</div>
+
+							<div class="row">
+								<div class="col-md-2 col-sm-2 col-2">
+									<i class="fab fa-android"> </i>
+								</div>
+								<div class="col-md-10 col-sm-10 col-10">
+									<p class="float-left">Android Application</p>
+								</div>
+								
+							</div>
+
+							<div class="row">
+								<div class="col-md-2 col-sm-2 col-2">
+									<i class="fas fa-balance-scale"> </i>
+								</div>
+								<div class="col-md-10 col-sm-10 col-10">
+									<p class="float-left">E-Commerce Application</p>
+								</div>
+								
+							</div>
+							
+						</div>
+
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+					<div class="card">
+						<img class="card-img-top" src="images/product2.jpg">
+						<div class="card-body">
+							<h5>Website </h5>
+							<p class="card-text">Lorem Ipsum adalah contoh teks atau dummy.</p>
+						</div>
+
+						<div class="card-bottom" >
+							<div class="row">
+								<div class="col-md-2 col-sm-2 col-2">
+									<i class="fab fa-apple"> </i>
+								</div>
+								<div class="col-md-10 col-sm-10 col-10">
+									<p class="float-left">Macintosh</p>
+								</div>
+								
+							</div>
+
+							<div class="row">
+								<div class="col-md-2 col-sm-2 col-2">
+									<i class="fab fa-windows"> </i>
+								</div>
+								<div class="col-md-10 col-sm-10 col-10">
+									<p class="float-left">Windows</p>
+								</div>
+								
+							</div>
+
+							<div class="row">
+								<div class="col-md-2 col-sm-2 col-2">
+									<i class="far fa-address-card"></i>	
+								</div>
+								<div class="col-md-10 col-sm-10 col-10">
+									<p class="float-left">Company Profile</p>
+								</div>
+								
+							</div>
+							
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="card">
+						<img class="card-img-top" src="images/product3.jpg">
+						<div class="card-body">
+							<h5>Hardware Kit</h5>
+							<p class="card-text">Lorem Ipsum adalah contoh teks atau dummy.</p>
+						</div>
+
+						<div class="card-bottom" >
+							<div class="row">
+								<div class="col-md-2 col-sm-2 col-2">
+									<i class="fas fa-music"></i>
+								</div>
+								<div class="col-md-10 col-sm-10 col-10">
+									<p class="float-left">Music Hardware</p>
+								</div>
+								
+							</div>
+
+							<div class="row">
+								<div class="col-md-2 col-sm-2 col-2">
+									<i class="fas fa-headphones"></i>
+								</div>
+								<div class="col-md-10 col-sm-10 col-10">
+									<p class="float-left">Sound System</p>
+								</div>
+								
+							</div>
+
+							<div class="row">
+								<div class="col-md-2 col-sm-2 col-2">
+									<i class="fas fa-video"> </i>
+								</div>
+								<div class="col-md-10 col-sm-10 col-10">
+									<p class="float-left">Video Maker</p>
+								</div>
+								
+							</div>
+							
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+			
+
+		</div>
+	</div>
+
+	<!--SERVICE-->
+	<div id="service" class="container-fluid page-section">
+		<div class="container">
+			<h3>Course Pen Value</h3>
+			<p>Course Pen provides complete IT solutions, everything you need to face your technology challenges</p>
+			<hr/>
+			<!--ROW 1-->
+			<div class="row">
+				<div class="col-md-4 col-sm-4 col-4 ">
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-3">
+							<i class="fas fa-star"></i>
+						</div>
+						<div class="col-md-9 col-sm-9 col-9">
+							<p class="float-left">Services</p>
+							
+						</div>
+					</div>	
+					
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-4 ">
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-3">
+							<i class="fas fa-paint-brush"></i>
+						</div>
+						<div class="col-md-9 col-sm-9 col-9">
+							<p class="float-left">Design</p>
+						</div>
+					</div>	
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-4 ">
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-3">
+							<i class="fas fa-code"></i>
+						</div>
+						<div class="col-md-9 col-sm-9 col-9">
+							<p class="float-left">Programming</p>
+						</div>
+					</div>	
+				</div>
+
+				
+
+			</div>
+			
+			<!--ROW 2-->
+			<div class="row">
+				<div class="col-md-4 col-sm-4 col-4 ">
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-3">
+							<i class="fas fa-microchip"></i>
+						</div>
+						<div class="col-md-9 col-sm-9 col-9">
+							<p class="float-left">Hardware</p>
+						</div>
+					</div>	
+					
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-4 ">
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-3">
+							<i class="fas fa-fire"></i>
+						</div>
+						<div class="col-md-9 col-sm-9 col-9">
+							<p class="float-left">Fun</p>
+						</div>
+					</div>	
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-4 ">
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-3">
+							<i class="fas fa-chess"></i>
+						</div>
+						<div class="col-md-9 col-sm-9 col-9">
+							<p class="float-left">Logic</p>
+						</div>
+					</div>	
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<!--PROFILE-->
+	<div id="profile" class="container-fluid page-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img class="img-fluid" src="images/office.jpeg">
+				</div>
+				<div class="col-md-8">
+					<h3>Course Pen has a nice Office</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<button class="btn btn-primary">More Information..</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--TEAMS-->
+	<div id="teams" class="container-fluid page-section">
+		<div class="container">
+			<h3>Our Teams</h3>
+			<p>Course Pen members are from the experts of their department</p>
+			<hr/>
+			<div class="row">
+				<div class="col-md-2 col-sm-1"></div>
+				<div class="col-md-8 col-sm-10">
+					<div class="row">
+						<div class="col-md-4">
+							<img class="img-fluid rounded" src="images/Team1.jpg">
+							<h5>Member's Name</h5>
+							<p>Programmer</p>
+
+						</div>
+						<div class="col-md-4">
+							<img class="img-fluid rounded" src="images/Team2.jpg">
+							<h5>Member's Name</h5>
+							<p>Designer</p>
+						</div>
+						<div class="col-md-4">
+							<img class="img-fluid rounded"  src="images/Team3.jpg">
+							<h5>Member's Name</h5>
+							<p>Analyst</p>							
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-1"></div>
+			</div>
+			
+			
+		</div>
+	</div>
+
+	<!--CONTACT US-->
+	<div id="contact" class="container-fluid page-section">
+		<div class="container">
+			<h3>Our Location</h3>
+			<p>You can find us in this Location</p>
+			<hr/>
+			<div class="row">
+				<div class="col-md-6">
+					<h5>Contact Us</h5>
+					<form action="" method="">
+						<div class="form-group">
+							
+							<input type="text" class="form-control" id="name" placeholder="Name" required="required">
+						</div>
+						<div class="form-group">
+								
+							<input type="email" class="form-control" id="email" placeholder="Email" required="required">
+						</div>
+						<div class="form-group">
+							
+							<textarea class="form-control" id="txta" rows="3" placeholder="Type your message here.."></textarea>
+						</div>
+
+					    <button type="submit" class="btn btn-default float-left">Send</button>
+					</form>
+				</div>
+				<div class="col-md-6">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6425197627595!2d106.7922128!3d-6.1785831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6f56ea049f7%3A0x47471a05e5adbd80!2sTaman%20Anggrek%2C%20Jl.%20Letjen%20S.%20Parman%20No.Kav%2021%2C%20RT.12%2FRW.1%2C%20Tj.%20Duren%20Sel.%2C%20Kec.%20Grogol%20petamburan%2C%20Kota%20Jakarta%20Barat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2011470!5e0!3m2!1sid!2sid!4v1570952423346!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!--COPYRIGHT-->
+	<div id="copyright" class="container-fluid ">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="float-left">Copyright &copy; 2018 | Vincent S. Guizot</p>
+					<p class="float-right">Made by Heart</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+</body>
+</html>
